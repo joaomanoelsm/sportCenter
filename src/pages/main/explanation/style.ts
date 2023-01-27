@@ -27,8 +27,14 @@ export const Container = styled.div`
 export const ItemsWrapper = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    gap: 2rem 8rem;
+  }
 `;
 
 export const Item = styled.div`

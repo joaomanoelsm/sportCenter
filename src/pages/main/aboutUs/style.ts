@@ -8,7 +8,11 @@ interface StyledAboutUsI {
 export const StyledAboutUs = styled.section<StyledAboutUsI>`
   width: 100%;
   height: 70rem;
+
   background: ${({ background }) => `url(${background})`};
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   display: flex;
   align-items: center;

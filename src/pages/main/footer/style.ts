@@ -10,7 +10,11 @@ export const StyledFooter = styled.footer``;
 export const FooterBackground = styled.div<FooterBackgroundI>`
   width: 100%;
   height: 43.7rem;
+
   background: ${({ background }) => `url(${background})`};
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   display: flex;
   align-items: center;

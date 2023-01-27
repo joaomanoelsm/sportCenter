@@ -8,10 +8,15 @@ interface StyledOurAcademy {
 export const StyledOurAcademy = styled.section<StyledOurAcademy>`
   width: 100%;
   height: 155.1rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   background: ${({ background }) => `url(${background})`};
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 `;
 
 export const GridTemplateWrapper = styled.section`
@@ -43,6 +48,7 @@ export const GridTemplate = styled.div`
 
   div {
     background-color: ${theme.color.greyScale[500]};
+
     width: 100%;
     height: 100%;
   }
