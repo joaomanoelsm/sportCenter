@@ -8,18 +8,12 @@ export const StyledMain = styled.main`
 
 export const GlobalStyle = createGlobalStyle`
   html {
-    @font-face {
+    @import url(${font});
+    
     font-family: "Aceh", Arial, Helvetica, sans-serif;
-      src: url(${font});
-    }
-
     font-size: 62.5%;
     vertical-align: middle;
-
-    font-synthesis: none;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
