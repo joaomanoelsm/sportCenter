@@ -1,5 +1,10 @@
 import styled, { css } from "styled-components";
 import theme from "./theme";
+import FontExtraBold from "../assets/fonts/Aceh-ExtraBold.otf";
+import FontBold from "../assets/fonts/Aceh-Bold.otf";
+import FontSemiBold from "../assets/fonts/Aceh-SemiBold.otf";
+import FontMedium from "../assets/fonts/Aceh-Medium.otf";
+import FontRegular from "../assets/fonts/Aceh-Regular.otf";
 
 interface TextI {
   color: "Orange" | "Black" | "White";
@@ -47,15 +52,40 @@ export const Text = styled.p<TextI>`
   font-weight: ${({ fontWeight }) => {
     switch (fontWeight) {
       case "Extra-Bold":
-        return "800";
+        return css`
+          @font-face {
+            font-family: "Aceh", Arial, Helvetica, sans-serif;
+            src: url(${FontExtraBold});
+          }
+        `;
       case "Bold":
-        return "700";
+        return css`
+          @font-face {
+            font-family: "Aceh", Arial, Helvetica, sans-serif;
+            src: url(${FontBold});
+          }
+        `;
       case "Semi-Bold":
-        return "600";
+        return css`
+          @font-face {
+            font-family: "Aceh", Arial, Helvetica, sans-serif;
+            src: url(${FontSemiBold});
+          }
+        `;
       case "Medium":
-        return "500";
+        return css`
+          @font-face {
+            font-family: "Aceh", Arial, Helvetica, sans-serif;
+            src: url(${FontMedium});
+          }
+        `;
       case "Regular":
-        return "400";
+        return css`
+          @font-face {
+            font-family: "Aceh", Arial, Helvetica, sans-serif;
+            src: url(${FontRegular});
+          }
+        `;
     }
   }};
   line-height: ${({ lineHeight }) => lineHeight};
