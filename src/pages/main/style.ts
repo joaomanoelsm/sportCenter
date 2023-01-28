@@ -10,11 +10,6 @@ export const GlobalStyle = createGlobalStyle`
   html {
     @import url(${font});
 
-    @font-face {
-      font-family: "Aceh", Arial, Helvetica, sans-serif;
-      src: url();
-    }
-    
     font-size: 62.5%;
     vertical-align: middle;
     text-rendering: optimizeLegibility;
