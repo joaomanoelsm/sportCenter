@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import theme from "./theme";
 import FontExtraBold from "../assets/fonts/Aceh-ExtraBold.otf";
-import FontBold from "../assets/fonts/Aceh-Bold.otf";
+import FontBold from "../assets/fonts/Aceh-Bold.ttf";
 import FontSemiBold from "../assets/fonts/Aceh-SemiBold.otf";
 import FontMedium from "../assets/fonts/Aceh-Medium.otf";
 import FontRegular from "../assets/fonts/Aceh-Regular.otf";
