@@ -1,10 +1,5 @@
 import styled, { css } from "styled-components";
 import theme from "./theme";
-import FontExtraBold from "../assets/fonts/Aceh-ExtraBold.otf";
-import FontBold from "../assets/fonts/Aceh-Bold.ttf";
-import FontSemiBold from "../assets/fonts/Aceh-SemiBold.otf";
-import FontMedium from "../assets/fonts/Aceh-Medium.otf";
-import FontRegular from "../assets/fonts/Aceh-Regular.otf";
 
 interface TextI {
   color: "Orange" | "Black" | "White";
@@ -49,43 +44,18 @@ export const Text = styled.p<TextI>`
         return theme.font.fontTextS;
     }
   }};
-  font-weight: ${({ fontWeight }) => {
+  font-family: ${({ fontWeight }) => {
     switch (fontWeight) {
       case "Extra-Bold":
-        return css`
-          @font-face {
-            font-family: "Aceh", Arial, Helvetica, sans-serif;
-            src: url(${FontExtraBold});
-          }
-        `;
+        return "Aceh-Medium, Arial, Helvetica, sans-serif";
       case "Bold":
-        return css`
-          @font-face {
-            font-family: "Aceh", Arial, Helvetica, sans-serif;
-            src: url(${FontBold});
-          }
-        `;
+        return "Aceh-Medium, Arial, Helvetica, sans-serif";
       case "Semi-Bold":
-        return css`
-          @font-face {
-            font-family: "Aceh", Arial, Helvetica, sans-serif;
-            src: url(${FontSemiBold});
-          }
-        `;
+        return "Aceh-Medium, Arial, Helvetica, sans-serif";
       case "Medium":
-        return css`
-          @font-face {
-            font-family: "Aceh", Arial, Helvetica, sans-serif;
-            src: url(${FontMedium});
-          }
-        `;
+        return "Aceh-Medium, Arial, Helvetica, sans-serif";
       case "Regular":
-        return css`
-          @font-face {
-            font-family: "Aceh", Arial, Helvetica, sans-serif;
-            src: url(${FontRegular});
-          }
-        `;
+        return "Aceh-Medium, Arial, Helvetica, sans-serif";
     }
   }};
   line-height: ${({ lineHeight }) => lineHeight};
@@ -112,21 +82,21 @@ export const Button = styled.button<ButtonI>`
           font-size: 2rem;
           padding: 2rem 4rem;
           border-radius: 4.2rem;
-          font-weight: 400;
+          font-family: Aceh-Regular, Arial, Helvetica, sans-serif;
         `;
       case "Medium":
         return css`
           font-size: 1.6rem;
           padding: 1rem 6.2rem;
           border-radius: 2rem;
-          font-weight: 600;
+          font-family: Aceh-Semi-Bold, Arial, Helvetica, sans-serif;
         `;
       case "Large":
         return css`
           font-size: 2.4rem;
           padding: 2.4rem 5rem;
           border-radius: 6.8rem;
-          font-weight: 700;
+          font-family: Aceh-Bold, Arial, Helvetica, sans-serif;
         `;
     }
   }};
