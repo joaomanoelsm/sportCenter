@@ -1,6 +1,4 @@
 import styled, { createGlobalStyle } from "styled-components";
-import theme from "../../styles/theme";
-import font from "../../assets/fonts/Aceh-Medium.otf";
 
 export const StyledMain = styled.main`
   width: 100%;
@@ -8,11 +6,8 @@ export const StyledMain = styled.main`
 
 export const GlobalStyle = createGlobalStyle`
   html {
-    @import url(${font});
-
     font-size: 62.5%;
     vertical-align: middle;
-    text-rendering: optimizeLegibility;
 
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
