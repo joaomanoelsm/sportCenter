@@ -10,7 +10,7 @@ const AboutUs = () => {
         <Title
           as="h2"
           color="White"
-          fontSize="Font-Title-m"
+          fontSize="4rem"
           lineHeight="100%"
           fontWeight="Extra-Bold"
         >
@@ -18,19 +18,17 @@ const AboutUs = () => {
         </Title>
         <Text
           color="White"
-          fontSize="Font-Text-m"
+          fontSize="2.4rem"
           lineHeight="75%"
           fontWeight="Regular"
         >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Somos o Sport Center, uma academia localizada na Colônia Treze.
+          Oferecemos uma ampla gama de equipamentos de ginástica, aulas
+          variadas, como musculação, dança e boxe. Além disso, temos uma equipe
+          amigável e capacitada para ajudá-lo a alcançar seus objetivos de saúde
+          e fitness. Outras vantagens incluem horários flexíveis, preços
+          acessíveis e uma localização conveniente. Venha nos visitar e
+          experimente a diferença de treinar no Sport Center!
         </Text>
         <Button size="Small">Saiba Mais</Button>
       </Info>

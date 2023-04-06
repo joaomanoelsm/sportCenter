@@ -1,10 +1,26 @@
 import { Button, Option, Title } from "../../../styles/global";
 import { List, NavBar, NavBarWrapper, StyledHeader } from "./style";
 import Logo from "../../../assets/svgs/Logo-Header.svg";
+import { useEffect, useRef, useState } from "react";
 
 const Header = () => {
+  const [visibility, setVisibility] = useState(false);
+  const headerRef = useRef<HTMLHeadElement>(null!);
+
+  const backPage = () => {
+    window.scrollTo(0, 0);
+  };
+
+  useEffect(() => {
+    const changeHeaderBackground = () => {
+      scrollY > 0 ? setVisibility(true) : setVisibility(false);
+    };
+
+    window.addEventListener("scroll", changeHeaderBackground);
+  });
+
   return (
-    <StyledHeader>
+    <StyledHeader ref={headerRef} visibility={visibility}>
       <NavBarWrapper>
         <img src={Logo} alt="Logo" />
         <NavBar>
@@ -14,7 +30,7 @@ const Header = () => {
                 as="a"
                 fontWeight="Extra-Bold"
                 color="White"
-                fontSize="Font-Text-m"
+                fontSize="2.4rem"
                 lineHeight="75%"
               >
                 INICIO
@@ -25,7 +41,7 @@ const Header = () => {
                 as="a"
                 fontWeight="Extra-Bold"
                 color="White"
-                fontSize="Font-Text-m"
+                fontSize="2.4rem"
                 lineHeight="75%"
               >
                 TREINOS
@@ -36,7 +52,7 @@ const Header = () => {
                 as="a"
                 fontWeight="Extra-Bold"
                 color="White"
-                fontSize="Font-Text-m"
+                fontSize="2.4rem"
                 lineHeight="75%"
               >
                 SOBRE NÓS
@@ -47,7 +63,7 @@ const Header = () => {
                 as="a"
                 fontWeight="Extra-Bold"
                 color="White"
-                fontSize="Font-Text-m"
+                fontSize="2.4rem"
                 lineHeight="75%"
               >
                 CONTATO

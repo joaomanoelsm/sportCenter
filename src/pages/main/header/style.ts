@@ -1,27 +1,46 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import theme from "../../../styles/theme";
+import { GlobalSize } from "../style";
 
-export const StyledHeader = styled.header`
+interface StyledHeaderI {
+  visibility: boolean;
+}
+
+export const StyledHeader = styled.header<StyledHeaderI>`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: all 0.5s;
   position: fixed;
   width: 100%;
   z-index: 2;
+
+  ${({ visibility }) => {
+    switch (visibility) {
+      case true:
+        return css`
+          background: hsla(0, 0%, 0%, 0.801);
+          backdrop-filter: blur(5px);
+        `;
+      case false:
+        return css`
+          background: transparent;
+          backdrop-filter: blur(0px);
+        `;
+    }
+  }}
 `;
 
 export const NavBarWrapper = styled.div`
-  width: ${theme.screenWidth.size1};
+  ${GlobalSize}
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   img {
     width: 10rem;
-  }
-
-  @media (max-width: 900px) {
-    width: ${theme.screenWidth.size2};
   }
 `;
 
@@ -37,6 +56,10 @@ export const List = styled.ul`
 
   li:nth-child(-n + 4) {
     margin-right: 4rem;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
   }
 `;
 

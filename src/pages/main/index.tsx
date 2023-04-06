@@ -5,6 +5,7 @@ import Explanation from "./explanation";
 import Footer from "./footer";
 import Header from "./header";
 import Intro from "./intro";
+import Location from "./location";
 import OurAcademy from "./ourAcademy";
 import { GlobalStyle, StyledMain } from "./style";
 import Workouts from "./workouts";
@@ -16,7 +17,7 @@ const Main = () => {
       <Intro />
       <Workouts />
       <AboutUs />
-      <Benefits />
+      <Location />
       <OurAcademy />
       <Explanation />
       <Footer />

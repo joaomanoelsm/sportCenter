@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import theme from "../../../styles/theme";
+import { GlobalSize } from "../style";
 
 export const StyledWorkouts = styled.section`
   display: flex;
@@ -9,7 +10,7 @@ export const StyledWorkouts = styled.section`
 `;
 
 export const ImgsWrapper = styled.div`
-  width: ${theme.screenWidth.size1};
+  ${GlobalSize}
 
   display: flex;
   align-items: center;
@@ -19,18 +20,28 @@ export const ImgsWrapper = styled.div`
 
 export const Imgs = styled.div`
   width: 100%;
-  justify-content: space-between;
-  display: flex;
   margin-top: 8rem;
+  gap: 0.7rem;
+
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 767px) {
+    gap: 4rem;
+  }
 `;
 
 export const Img = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 37rem;
 
-  div {
+  img {
     width: 100%;
     height: 24.7rem;
-    background-color: ${theme.color.greyScale[500]};
+
     margin-bottom: 1.2rem;
     border-radius: 1.2rem;
   }

@@ -9,7 +9,7 @@ const Intro = () => {
         <Title
           as="h1"
           color="Orange"
-          fontSize="Font-Title-xl"
+          fontSize="10rem"
           lineHeight="75%"
           fontWeight="Bold"
         >

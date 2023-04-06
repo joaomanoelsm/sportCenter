@@ -57,6 +57,16 @@ export const Item = styled.div<ItemI>`
       }
     }};
   }
+
+  @media (max-width: 660px) {
+    width: 40.8rem;
+    align-items: start;
+    flex-direction: column;
+
+    div:nth-child(1) {
+      order: 1;
+    }
+  }
 `;
 
 export const ItemInfo = styled.div`

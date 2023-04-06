@@ -20,6 +20,8 @@ export const Container = styled.div`
   }
 
   p {
+    width: 100%;
+    text-align: center;
     margin-bottom: 4rem;
   }
 `;
@@ -46,7 +48,7 @@ export const Item = styled.div`
   .image {
     width: 100%;
     height: 24.3rem;
-    background-color: ${theme.color.greyScale[500]};
+    background-color: ${theme.color.gray};
   }
 `;
 

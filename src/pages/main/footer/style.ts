@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import theme from "../../../styles/theme";
+import { GlobalSize } from "../style";
 
 interface FooterBackgroundI {
   background: string;
@@ -36,7 +37,7 @@ export const Container = styled.div`
 `;
 
 export const InfoWrapper = styled.div`
-  width: ${theme.screenWidth.size1};
+  ${GlobalSize}
   display: flex;
   justify-content: space-between;
 `;

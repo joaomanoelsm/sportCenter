@@ -27,7 +27,7 @@ const Footer = () => {
             <Option
               as="span"
               color="White"
-              fontSize="Font-Title-m"
+              fontSize="4rem"
               lineHeight="100%"
               fontWeight="Extra-Bold"
             >
@@ -43,7 +43,7 @@ const Footer = () => {
             <button>Contato</button>
             <Text
               color="White"
-              fontSize="Font-Text-s"
+              fontSize="1.6rem"
               lineHeight="100%"
               fontWeight="Regular"
             >

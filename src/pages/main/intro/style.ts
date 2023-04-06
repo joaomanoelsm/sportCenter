@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import theme from "../../../styles/theme";
+import { GlobalSize } from "../style";
 
 interface StyledIntroI {
   background: string;
@@ -18,12 +19,13 @@ export const StyledIntro = styled.section<StyledIntroI>`
 `;
 
 export const TitleWrapper = styled.div`
+  ${GlobalSize}
   position: absolute;
   top: 50%;
   left: 50%;
 
   transform: translateX(-50%) translateY(-50%);
-  width: ${theme.screenWidth.size1};
+  /* width: ${theme.screenWidth.size1}; */
   display: flex;
   align-items: flex-start;
 
@@ -32,6 +34,5 @@ export const TitleWrapper = styled.div`
   }
 
   @media (max-width: 900px) {
-    width: ${theme.screenWidth.size2};
   }
 `;

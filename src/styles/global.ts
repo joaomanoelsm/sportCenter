@@ -2,21 +2,16 @@ import styled, { css } from "styled-components";
 import theme from "./theme";
 
 interface TextI {
-  color: "Orange" | "Black" | "White";
+  color: "Orange" | "Black" | "White" | "Gray";
   lineHeight: "75%" | "100%";
-  fontSize:
-    | "Font-Title-xl"
-    | "Font-Title-x"
-    | "Font-Title-m"
-    | "Font-Title-s"
-    | "Font-Text-m"
-    | "Font-Text-s";
+  fontSize: "10rem" | "6.4rem" | "4rem" | "3.2rem" | "2.4rem" | "1.6rem";
   fontWeight: "Extra-Bold" | "Bold" | "Semi-Bold" | "Medium" | "Regular";
 }
 
 interface ButtonI {
   size: "Small" | "Medium" | "Large";
 }
+
 export const Text = styled.p<TextI>`
   color: ${({ color }) => {
     switch (color) {
@@ -26,24 +21,11 @@ export const Text = styled.p<TextI>`
         return "black";
       case "White":
         return "white";
+      case "Gray":
+        return theme.color.gray;
     }
   }};
-  font-size: ${({ fontSize }) => {
-    switch (fontSize) {
-      case "Font-Title-xl":
-        return theme.font.fontTitleXL;
-      case "Font-Title-x":
-        return theme.font.fontTitleX;
-      case "Font-Title-m":
-        return theme.font.fontTitleM;
-      case "Font-Title-s":
-        return theme.font.fontTitleS;
-      case "Font-Text-m":
-        return theme.font.fontTextM;
-      case "Font-Text-s":
-        return theme.font.fontTextS;
-    }
-  }};
+  font-size: ${({ fontSize }) => fontSize};
   font-family: ${({ fontWeight }) => {
     switch (fontWeight) {
       case "Extra-Bold":
@@ -73,8 +55,10 @@ export const Button = styled.button<ButtonI>`
   font-weight: 600;
   border: none;
   appearance: none;
+
   color: white;
   background-color: ${theme.color.primary};
+
   ${({ size }) => {
     switch (size) {
       case "Small":

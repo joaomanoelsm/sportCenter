@@ -8,6 +8,9 @@ import {
   ImgsWrapper,
   StyledWorkouts,
 } from "./style";
+import ImgFunctional from "../../../assets/imgs/Img-Funcional.jpg";
+import ImgTreaining from "../../../assets/imgs/Img-Treino-ao-ar-livre.jpg";
+import ImgGym from "../../../assets/imgs/Img-Musculação.jpg";
 
 const Workouts = () => {
   return (
@@ -16,7 +19,7 @@ const Workouts = () => {
         <Title
           as="h2"
           color="Orange"
-          fontSize="Font-Title-x"
+          fontSize="6.4rem"
           lineHeight="100%"
           fontWeight="Bold"
         >
@@ -24,34 +27,40 @@ const Workouts = () => {
         </Title>
         <Imgs>
           <Img>
-            <div></div>
+            <img src={ImgFunctional} alt="" />
             <Option
               as="span"
               color="Black"
-              fontSize="Font-Text-m"
+              fontSize="2.4rem"
               lineHeight="100%"
               fontWeight="Bold"
-            ></Option>
+            >
+              Funcional
+            </Option>
           </Img>
           <Img>
-            <div></div>
+            <img src={ImgTreaining} alt="" />
             <Option
               as="span"
               color="Black"
-              fontSize="Font-Text-m"
+              fontSize="2.4rem"
               lineHeight="100%"
               fontWeight="Bold"
-            ></Option>
+            >
+              Treino ao Ar livre
+            </Option>
           </Img>
           <Img>
-            <div></div>
+            <img src={ImgGym} alt="" />
             <Option
               as="span"
               color="Black"
-              fontSize="Font-Text-m"
+              fontSize="2.4rem"
               lineHeight="100%"
               fontWeight="Bold"
-            ></Option>
+            >
+              Musculação
+            </Option>
           </Img>
         </Imgs>
         <Decorator>

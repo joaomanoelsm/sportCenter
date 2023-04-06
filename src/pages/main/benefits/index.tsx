@@ -11,7 +11,7 @@ const Benefits = () => {
         <Title
           as="h2"
           color="Orange"
-          fontSize="Font-Title-x"
+          fontSize="6.4rem"
           lineHeight="100%"
           fontWeight="Bold"
         >
@@ -22,7 +22,7 @@ const Benefits = () => {
             <Title
               as="h3"
               color="Black"
-              fontSize="Font-Title-m"
+              fontSize="4rem"
               lineHeight="100%"
               fontWeight="Bold"
             >
@@ -30,7 +30,7 @@ const Benefits = () => {
             </Title>
             <Text
               color="Black"
-              fontSize="Font-Text-m"
+              fontSize="2.4rem"
               lineHeight="75%"
               fontWeight="Regular"
             >
@@ -49,7 +49,7 @@ const Benefits = () => {
             <Title
               as="h3"
               color="Black"
-              fontSize="Font-Title-m"
+              fontSize="4rem"
               lineHeight="100%"
               fontWeight="Bold"
             >
@@ -57,7 +57,7 @@ const Benefits = () => {
             </Title>
             <Text
               color="Black"
-              fontSize="Font-Text-m"
+              fontSize="2.4rem"
               lineHeight="75%"
               fontWeight="Regular"
             >

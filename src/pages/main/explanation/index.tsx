@@ -8,6 +8,9 @@ import {
   StyledExplanation,
 } from "./style";
 import arrowIcon from "../../../assets/svgs/Icon-Arrow.svg";
+import ImgDiet from "../../../assets/imgs/img-Dieta.jpg";
+import ImgExercise from "../../../assets/imgs/img-Exercicio-Livre.jpg";
+import ImgAerobic from "../../../assets/imgs/Img-Aerobico.jpg";
 
 const Explanation = () => {
   return (
@@ -16,7 +19,7 @@ const Explanation = () => {
         <Title
           as="h2"
           color="Black"
-          fontSize="Font-Title-x"
+          fontSize="6.4rem"
           lineHeight="100%"
           fontWeight="Extra-Bold"
         >
@@ -24,7 +27,7 @@ const Explanation = () => {
         </Title>
         <Text
           color="Black"
-          fontSize="Font-Title-s"
+          fontSize="3.2rem"
           lineHeight="75%"
           fontWeight="Medium"
         >
@@ -32,12 +35,12 @@ const Explanation = () => {
         </Text>
         <ItemsWrapper>
           <Item>
-            <div className="image"></div>
+            <img src={ImgDiet} alt="" />
             <Info>
               <Title
                 as="h3"
                 color="Black"
-                fontSize="Font-Title-s"
+                fontSize="3.2rem"
                 lineHeight="100%"
                 fontWeight="Semi-Bold"
               >
@@ -45,7 +48,7 @@ const Explanation = () => {
               </Title>
               <Text
                 color="Black"
-                fontSize="Font-Text-m"
+                fontSize="2.4rem"
                 lineHeight="75%"
                 fontWeight="Regular"
               >
@@ -55,12 +58,12 @@ const Explanation = () => {
             </Info>
           </Item>
           <Item>
-            <div className="image"></div>
+            <img src={ImgExercise} alt="" />
             <Info>
               <Title
                 as="h3"
                 color="Black"
-                fontSize="Font-Title-s"
+                fontSize="3.2rem"
                 lineHeight="100%"
                 fontWeight="Semi-Bold"
               >
@@ -68,7 +71,7 @@ const Explanation = () => {
               </Title>
               <Text
                 color="Black"
-                fontSize="Font-Text-m"
+                fontSize="2.4rem"
                 lineHeight="75%"
                 fontWeight="Regular"
               >
@@ -78,12 +81,12 @@ const Explanation = () => {
             </Info>
           </Item>
           <Item>
-            <div className="image"></div>
+            <img src={ImgAerobic} alt="" />
             <Info>
               <Title
                 as="h3"
                 color="Black"
-                fontSize="Font-Title-s"
+                fontSize="3.2rem"
                 lineHeight="100%"
                 fontWeight="Semi-Bold"
               >
@@ -91,7 +94,7 @@ const Explanation = () => {
               </Title>
               <Text
                 color="Black"
-                fontSize="Font-Text-m"
+                fontSize="2.4rem"
                 lineHeight="75%"
                 fontWeight="Regular"
               >
