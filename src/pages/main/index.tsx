@@ -13,14 +13,14 @@ import Workouts from "./workouts";
 const Main = () => {
   return (
     <StyledMain>
-      <Header />
-      <Intro />
+      {/* <Header /> */}
+      {/* <Intro />
       <Workouts />
       <AboutUs />
-      <Location />
+      <Location /> */}
       <OurAcademy />
-      <Explanation />
-      <Footer />
+      {/* <Explanation /> */}
+      {/* <Footer /> */}
     </StyledMain>
   );
 };

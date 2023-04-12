@@ -45,7 +45,7 @@ export const Item = styled.div`
   flex-direction: column;
   gap: 1.8rem;
 
-  .image {
+  img {
     width: 100%;
     height: 24.3rem;
     background-color: ${theme.color.gray};

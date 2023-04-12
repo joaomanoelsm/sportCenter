@@ -29,15 +29,15 @@ export const Text = styled.p<TextI>`
   font-family: ${({ fontWeight }) => {
     switch (fontWeight) {
       case "Extra-Bold":
-        return "Aceh-Medium, Arial, Helvetica, sans-serif";
+        return "Aceh-Extra-Bold, Arial, Helvetica, sans-serif";
       case "Bold":
-        return "Aceh-Medium, Arial, Helvetica, sans-serif";
+        return "Aceh-Bold, Arial, Helvetica, sans-serif";
       case "Semi-Bold":
-        return "Aceh-Medium, Arial, Helvetica, sans-serif";
+        return "Aceh-Semi-Bold, Arial, Helvetica, sans-serif";
       case "Medium":
         return "Aceh-Medium, Arial, Helvetica, sans-serif";
       case "Regular":
-        return "Aceh-Medium, Arial, Helvetica, sans-serif";
+        return "Aceh-Regular, Arial, Helvetica, sans-serif";
     }
   }};
   line-height: ${({ lineHeight }) => lineHeight};
