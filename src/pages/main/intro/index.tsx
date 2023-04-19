@@ -4,7 +4,7 @@ import { StyledIntro, TitleWrapper } from "./style";
 
 const Intro = () => {
   return (
-    <StyledIntro background={IntroBackground}>
+    <StyledIntro background={IntroBackground} id="intro">
       <TitleWrapper>
         <Title
           as="h1"

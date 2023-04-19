@@ -68,5 +68,10 @@ export const ButtonWrapper = styled.div`
     padding: 1.8rem 6rem;
     margin-bottom: 1.8rem;
     border-radius: 1.8rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 `;

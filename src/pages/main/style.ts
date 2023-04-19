@@ -47,6 +47,7 @@ export const GlobalStyle = createGlobalStyle`
   html {
     font-size: 62.5%;
     vertical-align: middle;
+    scroll-behavior: smooth;
 
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;

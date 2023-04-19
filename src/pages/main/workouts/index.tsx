@@ -14,7 +14,7 @@ import ImgGym from "../../../assets/imgs/Img-Musculação.jpg";
 
 const Workouts = () => {
   return (
-    <StyledWorkouts>
+    <StyledWorkouts id="training">
       <ImgsWrapper>
         <Title
           as="h2"
@@ -68,7 +68,11 @@ const Workouts = () => {
           <DecoratedBalls />
           <DecoratedBalls />
         </Decorator>
-        <Button size="Large">Entre em contato</Button>
+        <Button size="Large">
+          <a href="https://api.whatsapp.com/send?phone=5579999616722&text=Ol%C3%A1%20Walter!%20Vim%20pelo%20site%20da%20SportCenter">
+            Entre em contato
+          </a>
+        </Button>
       </ImgsWrapper>
     </StyledWorkouts>
   );

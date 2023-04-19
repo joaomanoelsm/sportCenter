@@ -58,6 +58,10 @@ export const List = styled.ul`
     margin-right: 4rem;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   @media (max-width: 767px) {
     display: none;
   }

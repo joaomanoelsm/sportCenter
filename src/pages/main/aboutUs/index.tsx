@@ -5,7 +5,7 @@ import AboutUsBackground from "../../../assets/imgs/Background-AboutUs.jpg";
 
 const AboutUs = () => {
   return (
-    <StyledAboutUs background={AboutUsBackground}>
+    <StyledAboutUs background={AboutUsBackground} id="about_us">
       <Info>
         <Title
           as="h2"
@@ -30,7 +30,11 @@ const AboutUs = () => {
           acessíveis e uma localização conveniente. Venha nos visitar e
           experimente a diferença de treinar no Sport Center!
         </Text>
-        <Button size="Small">Saiba Mais</Button>
+        <Button size="Small">
+          <a href="https://api.whatsapp.com/send?phone=5579999616722&text=Ol%C3%A1%20Walter!%20Vim%20pelo%20site%20da%20SportCenter">
+            Saiba mais
+          </a>
+        </Button>
       </Info>
     </StyledAboutUs>
   );

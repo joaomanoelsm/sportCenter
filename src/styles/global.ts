@@ -59,6 +59,11 @@ export const Button = styled.button<ButtonI>`
   color: white;
   background-color: ${theme.color.primary};
 
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
   ${({ size }) => {
     switch (size) {
       case "Small":

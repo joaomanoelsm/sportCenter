@@ -37,7 +37,7 @@ const Location = () => {
                 fontWeight="Semi-Bold"
               >
                 <img src={iconClock} alt="" />
-                06-21h de Seg a Sex
+                05-21h de Seg a Sex
               </Option>
             </TitleWrapper>
             <WrapperLists>
@@ -108,7 +108,11 @@ const Location = () => {
             uma tarefa fácil e conveniente. Venha nos visitar e experimente
             nossa localização de fácil acesso!
           </Text>
-          <Button size="Medium">Entre em contato</Button>
+          <Button size="Medium">
+            <a href="https://api.whatsapp.com/send?phone=5579999616722&text=Ol%C3%A1%20Walter!%20Vim%20pelo%20site%20da%20SportCenter">
+              Entre em contato
+            </a>
+          </Button>
         </Info>
       </LocationWrapper>
     </StyledLocation>
