@@ -13,7 +13,7 @@ const Intro = () => {
           lineHeight="75%"
           fontWeight="Bold"
         >
-          NOVOS DESAFIOS TE FAZEM CRESCER!
+          NOVOS <br /> DESAFIOS <br /> TE FAZEM <br /> CRESCER!
         </Title>
       </TitleWrapper>
     </StyledIntro>
