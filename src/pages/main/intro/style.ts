@@ -25,14 +25,6 @@ export const TitleWrapper = styled.div`
   left: 50%;
 
   transform: translateX(-50%) translateY(-50%);
-  /* width: ${theme.screenWidth.size1}; */
   display: flex;
   align-items: flex-start;
-
-  h1 {
-    width: 46.1rem;
-  }
-
-  @media (max-width: 900px) {
-  }
 `;
