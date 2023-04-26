@@ -366,7 +366,7 @@ Error generating stack: `+o.message+`
 
   @media (max-width: 900px) {
   }
-`,$0=()=>k(z0,{background:_0,id:"intro",children:k(P0,{children:k(St,{as:"h1",color:"Orange",fontSize:"10rem",lineHeight:"75%",fontWeight:"Bold",children:"NOVOS DESAFIOS TE FAZEM CRESCER!"})})}),N0=F.section`
+`,$0=()=>k(z0,{background:_0,id:"intro",children:k(P0,{children:W(St,{as:"h1",color:"Orange",fontSize:"10rem",lineHeight:"75%",fontWeight:"Bold",children:["NOVOS ",k("br",{})," DESAFIOS ",k("br",{})," TE FAZEM ",k("br",{})," CRESCER!"]})})}),N0=F.section`
   width: 100%;
   margin: 15rem 0;
   display: flex;
