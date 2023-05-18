@@ -85,7 +85,7 @@ const OurAcademy = () => {
           {cellPhoneOrientation ? <Slide elem={slideRef} time={5000} /> : null}
           <SlideWrapper>
             <StyledSlide ref={slideRef}>
-              <img src={img1Cell} alt="" />
+              <img src={img1} alt="" />
               <img src={img2Cell} alt="" />
               <img src={img3Cell} alt="" />
             </StyledSlide>
