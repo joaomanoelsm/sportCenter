@@ -77,30 +77,26 @@ export const GridTemplate = styled.div`
   }
 
   img:nth-child(1) {
-    grid-area: img-1;
-  }
-
-  img:nth-child(2) {
     grid-area: img-2;
   }
 
-  img:nth-child(3) {
+  img:nth-child(2) {
     grid-area: img-3;
   }
 
-  img:nth-child(4) {
+  img:nth-child(3) {
     grid-area: img-4;
   }
 
-  img:nth-child(5) {
+  img:nth-child(4) {
     grid-area: img-5;
   }
 
-  img:nth-child(6) {
+  img:nth-child(5) {
     grid-area: img-6;
   }
 
-  img:nth-child(7) {
+  img:nth-child(6) {
     grid-area: img-7;
   }
 
@@ -120,5 +116,25 @@ export const GridTemplate = styled.div`
 
   @media (max-width: 380px) {
     grid-template-rows: 200px;
+  }
+`;
+
+export const SlideWrapper = styled.div`
+  grid-area: img-1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+`;
+
+export const StyledSlide = styled.div`
+  transition: all 1s;
+  height: 100%;
+  display: flex;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
   }
 `;

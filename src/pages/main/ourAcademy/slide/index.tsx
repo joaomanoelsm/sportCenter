@@ -1,18 +1,26 @@
-import React from "react";
-import img1 from "../../../../assets/imgs/Img-1.jpg";
-import img2 from "../../../../assets/imgs/Img-2.jpg";
-import img3 from "../../../../assets/imgs/Img-3.jpg";
-import img4 from "../../../../assets/imgs/Img-4.jpg";
+import React, { useEffect } from "react";
 
-const Slide = () => {
-  return (
-    <div>
-      <img src={img1} alt="" />
-      <img src={img2} alt="" />
-      <img src={img3} alt="" />
-      <img src={img4} alt="" />
-    </div>
-  );
+interface SlideI {
+  elem: React.MutableRefObject<HTMLDivElement>;
+  time: number;
+}
+
+const Slide = ({ elem, time }: SlideI) => {
+  useEffect(() => {
+    setInterval(() => {
+      elem.current.style.transform = "translateX(-100%)";
+    }, time);
+
+    elem.current.ontransitionend = () => {
+      elem.current.style.transition = "none";
+      elem.current.appendChild(elem.current.firstElementChild!);
+      elem.current.style.transform = "translateX(0)";
+
+      setTimeout(() => (elem.current.style.transition = "all 1s ease-out"));
+    };
+  });
+
+  return null;
 };
 
 export default Slide;
